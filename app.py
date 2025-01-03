@@ -284,7 +284,7 @@ def edit_time():
 root = tk.Tk()
 root.title("New Marigold School Bell System")
 root.geometry("400x450")
-root.attributes('-fullscreen', True)
+# root.attributes('-fullscreen', True)
 
 # Title label
 title_label = tk.Label(root, text="New Marigold School Bell System", font=("Helvetica", 14, "bold"))
@@ -302,7 +302,7 @@ times_frame.pack(pady=10)
 scrollbar = tk.Scrollbar(times_frame, orient=tk.VERTICAL)
 
 # Times Listbox
-times_listbox = tk.Listbox(times_frame, height=10, width=30, selectmode=tk.SINGLE, yscrollcommand=scrollbar.set)
+times_listbox = tk.Listbox(times_frame, height=13, width=30, selectmode=tk.SINGLE, yscrollcommand=scrollbar.set)
 times_listbox.pack(side=tk.LEFT, fill=tk.BOTH)
 
 # Configure scrollbar to work with the listbox
